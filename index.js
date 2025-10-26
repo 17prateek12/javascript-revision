@@ -1,0 +1,1 @@
+console.log("hello world, welcome to javascript by docker")
