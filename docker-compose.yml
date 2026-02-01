@@ -1,8 +1,9 @@
 services:
   node:
-    image: node:22
+    image: node:20.18
     container_name: node-sandbox
     working_dir: /app
     volumes:
       - .:/app
     tty: true
+    command: bash -c "npm install -g typescript ts-node && bash"

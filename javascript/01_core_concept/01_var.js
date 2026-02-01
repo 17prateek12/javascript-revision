@@ -22,3 +22,14 @@ function dosomething() {
 }
 
 console.log("Let see which value of var be got print ", b); // 55, because it was present in nearest scope
+
+
+console.log("-------------------understanding var scope--------------------");
+
+function abss(){
+    if(true){
+       var xxx=10;
+    }
+    console.log("value of xxx ",xxx);
+}
+abss();
