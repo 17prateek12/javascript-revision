@@ -12,15 +12,16 @@ if(true)
     var cc=1000;
 }
 
-console.log("value of cc which is declare in block ",cc) // value of cc which is declare in block  1000
+console.log("value of cc which is declare in block which we access outside of block",cc) // value of cc which is declare in block  1000
 
 
 ////
 var b = 55;
 function dosomething() {
     var b= 66;
+    console.log("Let see which value of var be got print inside function ", b); 
 }
-
+dosomething()
 console.log("Let see which value of var be got print ", b); // 55, because it was present in nearest scope
 
 
@@ -33,3 +34,5 @@ function abss(){
     console.log("value of xxx ",xxx);
 }
 abss();
+
+// console.log("value of xxx trying to access outside ", xxx); //ReferenceError: xxx is not defined
